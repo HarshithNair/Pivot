@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Pivot — The AI Brain for Startup Survival
 
-## Getting Started
+> Startups don’t fail because they lack ambition.  
+> They fail because they make decisions in darkness.
 
-First, run the development server:
+Pivot is an AI-powered strategic intelligence platform designed to help startups identify hidden growth bottlenecks, customer friction, and business risks before they become fatal.
+
+Instead of overwhelming founders with raw analytics, Pivot transforms startup data into actionable strategic insights.
+
+---
+
+# 🧠 What Pivot Does
+
+Pivot analyzes:
+- customer behavior
+- churn
+- onboarding friction
+- pricing psychology
+- retention patterns
+- startup metrics
+
+to generate:
+- Startup Health Scores
+- Survival Probability
+- Customer Trust Index
+- Strategic Recommendations
+- Future Business Simulations
+
+Think of it as:
+> An AI cofounder for startup decision-making.
+
+---
+
+# ✨ Features
+
+## 📊 AI Startup Diagnosis
+Detects:
+- growth bottlenecks
+- onboarding friction
+- churn risks
+- trust issues
+- positioning problems
+
+---
+
+## 🔮 Future Simulation Engine
+Simulate business decisions before making them.
+
+Examples:
+- pricing changes
+- marketing spend
+- retention improvements
+- growth projections
+
+---
+
+## 🧠 Strategic Intelligence Dashboard
+Modern SaaS dashboard with:
+- startup health metrics
+- AI-generated insights
+- emotional sentiment analysis
+- business risk indicators
+
+---
+
+## ⚔️ Competitor Intelligence
+Analyze:
+- market positioning
+- trust perception
+- competitor strengths
+- strategic gaps
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- shadcn/ui
+
+## Backend & AI
+- FastAPI
+- OpenAI API
+
+## Database & Infrastructure
+- Supabase
+- Firebase Hosting
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone <repo-url>
+cd pivot
