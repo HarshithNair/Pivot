@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-pivot-black: #000000;
+  --color-pivot-charcoal: #0a0a0b;
+  --color-pivot-blue: #00d2ff; /* Cyan */
+  --color-pivot-sky: #0088ff; /* Sky Blue */
+  --color-pivot-gray: #1a1a1e;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  
+  --animate-gradient: gradient 8s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --pivot-blue-glow: rgba(0, 210, 255, 0.3);
+  --pivot-sky-glow: rgba(0, 136, 255, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(15, 15, 18, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-lighter {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .text-glow-blue {
+    text-shadow: 0 0 10px var(--pivot-blue-glow);
+  }
+
+  .text-glow-sky {
+    text-shadow: 0 0 10px var(--pivot-sky-glow);
+  }
+
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+  
+  .hero-gradient {
+    background: radial-gradient(circle at 50% 50%, #001a1e 0%, #000000 100%);
+  }
+
+  .glow-border {
+    position: relative;
+  }
+  
+  .glow-border::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(45deg, var(--color-pivot-blue), var(--color-pivot-sky));
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .glow-border:hover::after {
+    opacity: 0.5;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2e;
+}
