@@ -68,7 +68,7 @@ export default function SettingsPage() {
                   <div className="flex justify-between items-center">
                     <div>
                       <p className="text-sm font-bold">Predictive Confidence</p>
-                      <p className="text-[10px] text-white/40">Only show >90% probability</p>
+                      <p className="text-[10px] text-white/40">Only show {" > "}90% probability</p>
                     </div>
                     <div className="w-10 h-5 bg-white/10 rounded-full relative">
                       <div className="absolute left-1 top-1 w-3 h-3 bg-white/40 rounded-full" />
